@@ -1,8 +1,8 @@
 module.exports = {
-	root: true,
-	extends: 'eslint-config/base.js',
-	rules: {
-		'import/extensions': [
+  root: true,
+  extends: ['eslint-config/base', 'plugin:vue/recommended'],
+  rules: {
+    'import/extensions': [
       'error',
       'always',
       {
@@ -25,12 +25,12 @@ module.exports = {
         switchCase: 1,
       },
     ],
-	},
-	settings: {
-		'import/resolver': {
+  },
+  settings: {
+    'import/resolver': {
       node: {
         extensions: ['.js', '.vue'],
       },
     },
-	},
+  },
 };
