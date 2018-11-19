@@ -1,0 +1,23 @@
+{
+  "name": "@studiometa/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint Configuration",
+  "main": "base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Studio Meta <agence@studiometa.fr> (https://www.studiometa.fr)",
+  "contributors": [
+    "Titouan Mathis <titouan@studiometa.fr>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-vue": "^5.0.0-beta.4",
+    "prettier": "^1.15.2"
+  }
+}
