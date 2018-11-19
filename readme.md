@@ -2,7 +2,17 @@
 
 > Basic and extension of Studio Meta's ESLint configurations.
 
-# Usage
+## Installation
+
+Use your favorite package manager to install the package:
+
+```bash
+yarn add --dev @studiometa/eslint-config
+# OR
+npm install --save-dev @studiometa/eslint-config
+```
+
+## Usage
 
 To use the basic configuration, you just have to install this package and reference it in your ESLint configuration file:
 
