@@ -1,6 +1,10 @@
 module.exports = {
   root: true,
-  extends: [require.resolve('./base'), 'plugin:vue/recommended'],
+  extends: [
+    'eslint:recommended',
+    'eslint-config-airbnb-base',
+    'plugin:vue/recommended',
+  ],
   rules: {
     'import/extensions': [
       'error',
@@ -17,14 +21,6 @@ module.exports = {
         multiline: 'never',
       },
     ],
-    'vue/script-indent': [
-      'error',
-      2,
-      {
-        baseIndent: 1,
-        switchCase: 1,
-      },
-    ],
   },
   settings: {
     'import/resolver': {
@@ -32,5 +28,13 @@ module.exports = {
         extensions: ['.js', '.vue'],
       },
     },
+  },
+  parserOptions: {
+    parser: 'babel-eslint',
+    ecmaVersion: 2017,
+    sourceType: 'module',
+  },
+  env: {
+    es6: true,
   },
 };
