@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['eslint-config/base', 'plugin:vue/recommended'],
+  extends: [require.resolve('./base'), 'plugin:vue/recommended'],
   rules: {
     'import/extensions': [
       'error',
