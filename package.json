@@ -4,7 +4,8 @@
   "description": "ESLint Configuration",
   "main": "base.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-vue": "eslint --no-eslintrc -c ./test/vue/.eslintrc.js ./test/vue/test.vue"
   },
   "author": "Studio Meta <agence@studiometa.fr> (https://www.studiometa.fr)",
   "contributors": [
