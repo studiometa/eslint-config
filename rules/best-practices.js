@@ -9,6 +9,7 @@ module.exports = {
     'no-implicit-coercion': [ 'error', { allow: [ '!!' ] }],
     'no-implicit-globals': 'error',
     'no-multi-spaces': 'error',
+    'no-useless-concat': 'error',
     'no-useless-return': 'error',
     'vars-on-top': 'error',
     'wrap-iife': [ 'error', 'any' ],

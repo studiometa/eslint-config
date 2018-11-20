@@ -3,34 +3,34 @@ module.exports = {
     'array-bracket-spacing': [
       'error',
       'always',
-      {
-        arraysInArrays: false,
-        objectsInArrays: false,
-      },
+      { arraysInArrays: false, objectsInArrays: false },
     ],
-    'no-trailing-spaces': 'error',
-    indent: [ 'error', 2 ],
-    quotes: [ 'error', 'single' ],
-    semi: [ 'error', 'always' ],
+    camelcase: [ 'error', { properties: 'always' }],
     'comma-dangle': [ 'error', 'always-multiline' ],
     'comma-spacing': [ 'error', { before: false, after: true }],
+    indent: [ 'error', 2 ],
     'max-len': [
       'error',
       { code: 80, ignoreUrls: true, ignoreRegExpLiterals: true },
     ],
     'no-multi-assign': 'error',
+    'no-trailing-spaces': 'error',
     'no-unneeded-ternary': 'error',
-    'require-jsdoc': [ 'warn', {
-      require: {
-        FunctionDeclaration: true,
-        MethodDefinition: true,
-        ClassDeclaration: true,
-        ArrowFunctionExpression: true,
-        FunctionExpression: true,
+    quotes: [ 'error', 'single' ],
+    'require-jsdoc': [
+      'warn',
+      {
+        require: {
+          FunctionDeclaration: true,
+          MethodDefinition: true,
+          ClassDeclaration: true,
+          ArrowFunctionExpression: true,
+          FunctionExpression: true,
+        },
       },
-    }],
+    ],
+    semi: [ 'error', 'always' ],
     'semi-style': [ 'error', 'last' ],
     'space-before-blocks': 'error',
-    camelcase: [ 'error', { properties: 'always' }],
   },
 };
