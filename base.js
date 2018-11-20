@@ -2,19 +2,10 @@ module.exports = {
   root: true,
   extends: [
     'eslint:recommended',
-    'eslint-config-airbnb-base',
-    'plugin:prettier/recommended',
+    'eslint-config-airbnb-base/legacy',
+    require.resolve('./rules/best-practices.js'),
+    require.resolve('./rules/possible-errors.js'),
+    require.resolve('./rules/strict.js'),
+    require.resolve('./rules/stylistic-issues.js'),
   ],
-  rules: {
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-  },
-  parserOptions: {
-    parser: 'babel-eslint',
-    ecmaVersion: 2017,
-    sourceType: 'module',
-  },
-  env: {
-    es6: true,
-  },
 };
