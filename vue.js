@@ -7,6 +7,7 @@ module.exports = {
     require.resolve('./rules/possible-errors.js'),
     require.resolve('./rules/strict.js'),
     require.resolve('./rules/stylistic-issues.js'),
+    require.resolve('./rules/es6.js'),
     'plugin:vue/recommended',
   ],
   rules: {
@@ -33,6 +34,22 @@ module.exports = {
       },
     },
   },
+  overrides: [
+    {
+      files: [ '*.vue' ],
+      rules: {
+        indent: 'off',
+        'vue/script-indent': [
+          'error',
+          2,
+          {
+            baseIndent: 1,
+            switchCase: 1,
+          },
+        ],
+      },
+    },
+  ],
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2017,
