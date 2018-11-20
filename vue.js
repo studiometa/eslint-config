@@ -3,6 +3,10 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'eslint-config-airbnb-base',
+    require.resolve('./rules/best-practices.js'),
+    require.resolve('./rules/possible-errors.js'),
+    require.resolve('./rules/strict.js'),
+    require.resolve('./rules/stylistic-issues.js'),
     'plugin:vue/recommended',
   ],
   rules: {
@@ -25,7 +29,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.vue'],
+        extensions: [ '.js', '.vue' ],
       },
     },
   },
