@@ -29,3 +29,9 @@ module.exports = {
   extends: '@studiometa/eslint-config/vue',
 };
 ```
+
+
+## To Do
+
+- Soften stylistic issues to warning, not errors
+- Add some documentation
