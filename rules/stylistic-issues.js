@@ -1,22 +1,22 @@
 module.exports = {
   rules: {
     'array-bracket-spacing': [
-      'error',
+      'warn',
       'always',
       { arraysInArrays: false, objectsInArrays: false },
     ],
-    camelcase: [ 'error', { properties: 'always' }],
-    'comma-dangle': [ 'error', 'always-multiline' ],
-    'comma-spacing': [ 'error', { before: false, after: true }],
-    indent: [ 'error', 2 ],
+    camelcase: [ 'warn', { properties: 'always' }],
+    'comma-dangle': [ 'warn', 'always-multiline' ],
+    'comma-spacing': [ 'warn', { before: false, after: true }],
+    indent: [ 'warn', 2 ],
     'max-len': [
-      'error',
+      'warn',
       { code: 80, ignoreUrls: true, ignoreRegExpLiterals: true },
     ],
-    'no-multi-assign': 'error',
-    'no-trailing-spaces': 'error',
-    'no-unneeded-ternary': 'error',
-    quotes: [ 'error', 'single' ],
+    'no-multi-assign': 'warn',
+    'no-trailing-spaces': 'warn',
+    'no-unneeded-ternary': 'warn',
+    quotes: [ 'warn', 'single' ],
     'require-jsdoc': [
       'warn',
       {
@@ -29,8 +29,8 @@ module.exports = {
         },
       },
     ],
-    semi: [ 'error', 'always' ],
-    'semi-style': [ 'error', 'last' ],
-    'space-before-blocks': 'error',
+    semi: [ 'warn', 'always' ],
+    'semi-style': [ 'warn', 'last' ],
+    'space-before-blocks': 'warn',
   },
 };
