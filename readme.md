@@ -1,14 +1,22 @@
-# Studiometa ESLint Configurations
+# Studio Meta ESLint Configurations
 
-> Basic and extension of Studio Meta's ESLint configurations.
+[![NPM Version](https://img.shields.io/npm/v/@studiometa/eslint-config.svg?style=flat-square)](https://www.npmjs.com/package/@studiometa/eslint-config)
+[![Dependency Status](https://img.shields.io/david/studiometa/eslint-config.svg?label=deps&style=flat-square)](https://david-dm.org/studiometa/eslint-config)
+[![devDependency Status](https://img.shields.io/david/dev/studiometa/eslint-config.svg?label=devDeps&style=flat-square)](https://david-dm.org/studiometa/eslint-config?type=dev)
+
+> Set of [ESLint](https://eslint.org/) configurations for multiple usages.
 
 ## Installation
 
-Use your favorite package manager to install the package:
+Install the package with Yarn:
 
 ```bash
 yarn add --dev @studiometa/eslint-config
-# OR
+```
+
+Or with NPM:
+
+```bash
 npm install --save-dev @studiometa/eslint-config
 ```
 
