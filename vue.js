@@ -30,13 +30,13 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: [ '.js', '.vue' ],
+        extensions: ['.js', '.vue'],
       },
     },
   },
   overrides: [
     {
-      files: [ '*.vue' ],
+      files: ['*.vue'],
       rules: {
         indent: 'off',
         'vue/script-indent': [

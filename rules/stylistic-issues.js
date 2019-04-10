@@ -5,10 +5,10 @@ module.exports = {
       'always',
       { arraysInArrays: false, objectsInArrays: false },
     ],
-    camelcase: [ 'warn', { properties: 'always' }],
-    'comma-dangle': [ 'warn', 'always-multiline' ],
-    'comma-spacing': [ 'warn', { before: false, after: true }],
-    indent: [ 'warn', 2 ],
+    camelcase: ['warn', { properties: 'always' }],
+    'comma-dangle': ['warn', 'always-multiline'],
+    'comma-spacing': ['warn', { before: false, after: true }],
+    indent: ['warn', 2],
     'max-len': [
       'warn',
       { code: 80, ignoreUrls: true, ignoreRegExpLiterals: true },
@@ -16,7 +16,7 @@ module.exports = {
     'no-multi-assign': 'warn',
     'no-trailing-spaces': 'warn',
     'no-unneeded-ternary': 'warn',
-    quotes: [ 'warn', 'single' ],
+    quotes: ['warn', 'single'],
     'require-jsdoc': [
       'warn',
       {
@@ -29,8 +29,8 @@ module.exports = {
         },
       },
     ],
-    semi: [ 'warn', 'always' ],
-    'semi-style': [ 'warn', 'last' ],
+    semi: ['warn', 'always'],
+    'semi-style': ['warn', 'last'],
     'space-before-blocks': 'warn',
   },
 };
