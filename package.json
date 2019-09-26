@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:lint-vue": "eslint --no-eslintrc -c ./test/vue/.eslintrc.js ./test/vue/test.vue",
     "lint": "eslint .",
-    "fix": "eslint --fix ."
+    "fix": "eslint --fix .",
+    "eslint-config": "eslint --print-config test/default/index.js --config src/index.js",
+    "eslint-check": "eslint --print-config test/default/index.js --config src/index.js | eslint-config-prettier-check",
+    "eslint-config-legacy": "eslint --print-config test/legacy/index.js --config src/legacy.js",
+    "eslint-check-legacy": "eslint --print-config test/legacy/index.js --config src/legacy.js | eslint-config-prettier-check"
   },
   "author": "Studio Meta <agence@studiometa.fr> (https://www.studiometa.fr)",
   "contributors": [

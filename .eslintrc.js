@@ -1,1 +1,1 @@
-module.exports = require('./prettier-es6.js');
+module.exports = require('./src/index.js');
