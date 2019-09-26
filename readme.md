@@ -8,16 +8,10 @@
 
 ## Installation
 
-Install the package with Yarn:
+Install the package with NPM:
 
 ```bash
-yarn add --dev @studiometa/eslint-config
-```
-
-Or with NPM:
-
-```bash
-npm install --save-dev @studiometa/eslint-config
+npm install --save-dev eslint prettier @studiometa/eslint-config
 ```
 
 ## Usage

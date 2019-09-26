@@ -8,7 +8,7 @@ module.exports = {
     require.resolve('./rules/strict.js'),
     require.resolve('./rules/stylistic-issues.js'),
     require.resolve('./rules/es6.js'),
-    'plugin:vue/recommended',
+    'plugin:prettier/recommended',
   ],
   rules: {
     'import/extensions': [
@@ -16,14 +16,9 @@ module.exports = {
       'always',
       {
         js: 'never',
+        mjs: 'never',
+        jsx: 'never',
         vue: 'never',
-      },
-    ],
-    'vue/html-closing-bracket-newline': [
-      'error',
-      {
-        singleline: 'never',
-        multiline: 'never',
       },
     ],
   },
@@ -34,22 +29,6 @@ module.exports = {
       },
     },
   },
-  overrides: [
-    {
-      files: ['*.vue'],
-      rules: {
-        indent: 'off',
-        'vue/script-indent': [
-          'error',
-          2,
-          {
-            baseIndent: 1,
-            switchCase: 1,
-          },
-        ],
-      },
-    },
-  ],
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2017,
@@ -58,4 +37,8 @@ module.exports = {
   env: {
     es6: true,
   },
+  overrides: [
+    require('./overrides/vue'),
+    require('./overrides/build-files'),
+  ],
 };
