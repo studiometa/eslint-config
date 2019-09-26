@@ -12,6 +12,7 @@ module.exports = {
     'no-param-reassign': ['warn', { props: false }],
     'no-useless-concat': 'warn',
     'no-useless-return': 'warn',
+    strict: ['error', 'function'],
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'any'],
     yoda: ['error', 'never'],
