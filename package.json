@@ -34,5 +34,9 @@
   "peerDependencies": {
     "eslint": ">=6.6.0",
     "prettier": ">=1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studiometa/eslint-config.git"
   }
 }
