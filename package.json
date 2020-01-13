@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:lint-vue": "eslint --no-eslintrc -c ./test/vue/.eslintrc.js ./test/vue/test.vue",
-    "lint": "eslint .",
-    "fix": "eslint --fix .",
+    "lint": "eslint src/",
+    "fix": "eslint --fix src/",
     "eslint-config": "eslint --print-config test/default/index.js --config src/index.js",
     "eslint-check": "eslint --print-config test/default/index.js --config src/index.js | eslint-config-prettier-check",
     "eslint-config-legacy": "eslint --print-config test/legacy/index.js --config src/legacy.js",
