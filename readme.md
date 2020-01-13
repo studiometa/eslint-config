@@ -20,15 +20,15 @@ To use the basic configuration, you just have to install this package and refere
 
 ```js
 module.exports = {
-  extends: '@studiometa/eslint-config/base',
+  extends: '@studiometa/eslint-config',
 };
 ```
 
-If your project is a Vue web app, you can extend the Vue specific configuration:
+If you have a legacy project with ES5 code, you can use the legacy configuration:
 
 ```js
 module.exports = {
-  extends: '@studiometa/eslint-config/vue',
+  extends: '@studiometa/eslint-config/src/legacy',
 };
 ```
 
@@ -44,54 +44,6 @@ These rules report common problems we can encounter in JavaScript. The full list
 ### `eslint-config-airbnb-base`
 
 People at Airbnb have written a [detailed documentation](https://github.com/airbnb/javascript#readme) of their JavaScript style guide and have published ESLint configurations to enforce it.
-
-### `plugin:prettier/recommended`
-
-This plugin turns off all ESLint stylistic rules that might conflict with [Prettier](https://github.com/prettier/prettier). You can find out more on the [project's repository](https://github.com/prettier/eslint-config-prettier#readme).                    |
-
-### `plugin:vue/recommended`
-
-For all `*.vue` files, we use the [official ESLint plugin](https://eslint.vuejs.org/) created by Vue.js. The following rules are also specified:
-
-<table>
-  <thead>
-    <tr>
-      <th>Rule</th>
-      <th>Configuration</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="https://eslint.vuejs.org/rules/html-closing-bracket-newline.html">code>vue/html-closing-bracket-newline</code></a></td>
-      <td>
-        <pre>[
-  'error',
-  {
-    singleline: 'never',
-    multiline: 'never',
-  },
-]</pre>
-      </td>
-    </tr>
-    <tr>
-      <td><a href="https://eslint.org/docs/rules/indent"><code>indent</code></a></td>
-      <td><code>'off'</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://eslint.vuejs.org/rules/script-indent.html"><code>vue/script-indent</code></a></td>
-      <td>
-        <pre>[
-  'error',
-  2,
-  {
-    baseIndent: 1,
-    switchCase: 1,
-  },
-]</pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
 
 ### Custom rules configurations
 
@@ -262,3 +214,68 @@ These rules help developpers avoir some possible errors.
 | [`prefer-template`](https://eslint.org/docs/rules/prefer-template)               | `'error'`                                 |
 | [`rest-spread-spacing`](https://eslint.org/docs/rules/rest-spread-spacing)       | `['warn', 'never']`                       |
 | [`template-curly-spacing`](https://eslint.org/docs/rules/template-curly-spacing) | `['warn', 'never']`
+
+### Overrides
+
+Overrides are used to define specific configuration for sets of limited file globs.
+
+### Build files
+
+Used for: `webpack.config.js, gulpfile.js, nuxt.config.js, webpack.mix.js`
+
+| Rule | Configuration |
+|-|-|
+| [`global-require`](https://eslint.org/docs/rules/global-require) | `off` |
+
+
+### Prettier
+
+Used for: `*.js`
+
+The `plugin:prettier/recommended` plugin turns off all ESLint stylistic rules that might conflict with [Prettier](https://github.com/prettier/prettier). You can find out more on the [project's repository](https://github.com/prettier/eslint-config-prettier#readme).                    |
+
+### Vue
+
+Used for: `*.vue`
+
+For all `*.vue` files, we use the [official ESLint plugin](https://eslint.vuejs.org/) created by Vue.js. The following rules are also specified:
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>Configuration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://eslint.vuejs.org/rules/html-closing-bracket-newline.html">code>vue/html-closing-bracket-newline</code></a></td>
+      <td>
+        <pre>[
+  'error',
+  {
+    singleline: 'never',
+    multiline: 'never',
+  },
+]</pre>
+      </td>
+    </tr>
+    <tr>
+      <td><a href="https://eslint.org/docs/rules/indent"><code>indent</code></a></td>
+      <td><code>'off'</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://eslint.vuejs.org/rules/script-indent.html"><code>vue/script-indent</code></a></td>
+      <td>
+        <pre>[
+  'error',
+  2,
+  {
+    baseIndent: 1,
+    switchCase: 1,
+  },
+]</pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
