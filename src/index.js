@@ -5,10 +5,8 @@ module.exports = {
     'eslint-config-airbnb-base',
     require.resolve('./rules/best-practices.js'),
     require.resolve('./rules/possible-errors.js'),
-    require.resolve('./rules/strict.js'),
     require.resolve('./rules/stylistic-issues.js'),
     require.resolve('./rules/es6.js'),
-    'plugin:vue/recommended',
   ],
   rules: {
     'import/extensions': [
@@ -16,40 +14,19 @@ module.exports = {
       'always',
       {
         js: 'never',
+        mjs: 'never',
+        jsx: 'never',
         vue: 'never',
-      },
-    ],
-    'vue/html-closing-bracket-newline': [
-      'error',
-      {
-        singleline: 'never',
-        multiline: 'never',
       },
     ],
   },
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.vue'],
+        extensions: ['.js', '.vue', '.mjs', '.jsx'],
       },
     },
   },
-  overrides: [
-    {
-      files: ['*.vue'],
-      rules: {
-        indent: 'off',
-        'vue/script-indent': [
-          'error',
-          2,
-          {
-            baseIndent: 1,
-            switchCase: 1,
-          },
-        ],
-      },
-    },
-  ],
   parserOptions: {
     parser: 'babel-eslint',
     ecmaVersion: 2017,
@@ -58,4 +35,9 @@ module.exports = {
   env: {
     es6: true,
   },
+  overrides: [
+    require('./overrides/build-files'),
+    require('./overrides/prettier'),
+    require('./overrides/vue'),
+  ],
 };
