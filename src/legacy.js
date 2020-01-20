@@ -5,7 +5,7 @@ module.exports = {
     'eslint-config-airbnb-base/legacy',
     require.resolve('./rules/best-practices.js'),
     require.resolve('./rules/possible-errors.js'),
-    require.resolve('./rules/strict.js'),
     require.resolve('./rules/stylistic-issues.js'),
+    'plugin:prettier/recommended',
   ],
 };

@@ -1,18 +1,11 @@
 module.exports = {
   rules: {
-    'array-bracket-spacing': [
-      'warn',
-      'always',
-      { arraysInArrays: false, objectsInArrays: false },
-    ],
+    'array-bracket-spacing': ['warn', 'always', { arraysInArrays: false, objectsInArrays: false }],
     camelcase: ['warn', { properties: 'always' }],
     'comma-dangle': ['warn', 'always-multiline'],
     'comma-spacing': ['warn', { before: false, after: true }],
     indent: ['warn', 2],
-    'max-len': [
-      'warn',
-      { code: 80, ignoreUrls: true, ignoreRegExpLiterals: true },
-    ],
+    'max-len': ['warn', { code: 100, ignoreUrls: true, ignoreRegExpLiterals: true }],
     'no-multi-assign': 'warn',
     'no-trailing-spaces': 'warn',
     'no-unneeded-ternary': 'warn',
