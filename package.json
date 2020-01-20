@@ -27,7 +27,7 @@
     "eslint-plugin-vue": "^5.2.3"
   },
   "devDependencies": {
-    "@studiometa/prettier-config": "^1.1.0",
+    "@studiometa/prettier-config": "^2.0.0",
     "eslint": "^6.6.0",
     "prettier": "^1.19.1"
   },
