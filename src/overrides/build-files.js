@@ -1,11 +1,7 @@
 module.exports = {
-  files: [
-    'webpack.config.js',
-    'gulpfile.js',
-    'nuxt.config.js',
-    'webpack.mix.js',
-  ],
+  files: ['gulpfile.js', 'webpack.mix.js', '.*rc.js', '*.config.js'],
   rules: {
     'global-require': 'off',
+    'import/no-extraneous-dependencies': ['warning', { devDependencies: true }],
   },
 };
