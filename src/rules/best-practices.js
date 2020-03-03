@@ -16,5 +16,6 @@ module.exports = {
     'vars-on-top': 'error',
     'wrap-iife': ['error', 'any'],
     yoda: ['error', 'never'],
+    'class-methods-use-this': 'off',
   },
 };
