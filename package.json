@@ -28,11 +28,11 @@
   },
   "devDependencies": {
     "@studiometa/prettier-config": "^2.0.0",
-    "eslint": "^6.6.0",
-    "prettier": "^1.19.1"
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5"
   },
   "peerDependencies": {
-    "eslint": ">=6.6.0",
+    "eslint": ">=7.0.0",
     "prettier": ">=1.19.1"
   },
   "repository": {
