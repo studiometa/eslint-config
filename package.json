@@ -1,6 +1,6 @@
 {
   "name": "@studiometa/eslint-config",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "ESLint Configuration",
   "main": "src/index.js",
   "scripts": {
@@ -17,6 +17,9 @@
   "contributors": [
     "Titouan Mathis <titouan@studiometa.fr>"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^10.0.3",
