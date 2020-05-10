@@ -17,6 +17,9 @@
   "contributors": [
     "Titouan Mathis <titouan@studiometa.fr>"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^10.0.3",
