@@ -37,10 +37,6 @@ module.exports = {
     es6: true,
   },
   overrides: [
-    {
-      files: '**/*.js',
-      parser: 'babel-eslint',
-    },
     require('./overrides/build-files'),
     require('./overrides/jest'),
     require('./overrides/prettier'),
