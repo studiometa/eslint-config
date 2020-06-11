@@ -1,6 +1,12 @@
 module.exports = {
   files: ['*.vue'],
   extends: ['plugin:vue/recommended'],
+  parser: 'vue-eslint-parser',
+  parserOptions: {
+    parser: 'babel-eslint',
+    ecmaVersion: 2019,
+    sourceType: 'module',
+  },
   rules: {
     /**
      * Disallow orphan closing `>`
