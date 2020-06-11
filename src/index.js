@@ -27,11 +27,7 @@ module.exports = {
       },
     },
   },
-  parserOptions: {
-    parser: 'babel-eslint',
-    ecmaVersion: 2019,
-    sourceType: 'module',
-  },
+  parser: 'babel-eslint',
   env: {
     browser: true,
     es6: true,

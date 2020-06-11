@@ -1,10 +1,10 @@
 {
   "name": "@studiometa/eslint-config",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "ESLint Configuration",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "test:lint-vue": "eslint --no-eslintrc -c ./test/vue/.eslintrc.js ./test/vue/test.vue",
     "lint": "eslint src/",
     "fix": "eslint --fix src/",
