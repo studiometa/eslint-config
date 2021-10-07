@@ -1,4 +1,4 @@
 module.exports = {
-  files: ['*.js'],
+  files: ['*.js', '*.mjs', '*.cjs'],
   extends: ['plugin:prettier/recommended'],
 };
