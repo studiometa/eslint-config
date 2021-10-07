@@ -9,23 +9,7 @@ module.exports = {
     require.resolve('./rules/es6.js'),
   ],
   rules: {
-    'import/extensions': [
-      'error',
-      'always',
-      {
-        js: 'never',
-        mjs: 'never',
-        jsx: 'never',
-        vue: 'never',
-      },
-    ],
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.vue', '.mjs', '.jsx'],
-      },
-    },
+    'import/extensions': ['error', 'always'],
   },
   parser: 'babel-eslint',
   env: {
