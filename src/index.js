@@ -7,6 +7,7 @@ module.exports = {
     require.resolve('./rules/possible-errors.js'),
     require.resolve('./rules/stylistic-issues.js'),
     require.resolve('./rules/es6.js'),
+    require.resolve('./rules/jsdoc.js'),
   ],
   rules: {
     'import/extensions': ['error', 'always'],
