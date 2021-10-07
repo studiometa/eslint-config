@@ -1,6 +1,6 @@
 module.exports = {
   rules: {
-    'arrow-spacing': ['warn', { before: true, after: true }],
+    'arrow-spacing': 'off',
     'no-var': 'error',
     'object-shorthand': 'error',
     'prefer-const': 'error',
