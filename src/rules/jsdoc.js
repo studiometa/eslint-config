@@ -114,7 +114,7 @@ module.exports = {
     // `@param`
 
     // Requires that all function parameters are documented.
-    'jsdoc/require-param': 'error',
+    'jsdoc/require-param': ['error', { enableFixer: false }],
     // Requires that each `@param` tag has a `description` value.
     'jsdoc/require-param-description': 'off',
     // Requires that all function parameters have names.
