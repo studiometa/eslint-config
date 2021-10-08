@@ -3,13 +3,14 @@ module.exports = {
   extends: ['plugin:vue/recommended'],
   parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     ecmaVersion: 2019,
     sourceType: 'module',
+    requireConfigFile: false,
   },
   rules: {
     /**
-     * Disallow orphan closing `>`
+     * Disallow orphan closing `>`.
      * @see https://eslint.vuejs.org/rules/html-closing-bracket-newline.html
      */
     'vue/html-closing-bracket-newline': [

@@ -8,19 +8,20 @@ module.exports = {
     require.resolve('./rules/stylistic-issues.js'),
     require.resolve('./rules/es6.js'),
     require.resolve('./rules/jsdoc.js'),
+    require.resolve('./rules/import.js'),
   ],
-  rules: {
-    'import/extensions': ['error', 'ignorePackages'],
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false,
   },
-  parser: 'babel-eslint',
   env: {
     browser: true,
     es6: true,
   },
   overrides: [
-    require('./overrides/build-files'),
-    require('./overrides/jest'),
-    require('./overrides/prettier'),
-    require('./overrides/vue'),
+    require('./overrides/build-files.js'),
+    require('./overrides/jest.js'),
+    require('./overrides/prettier.js'),
+    require('./overrides/vue.js'),
   ],
 };
