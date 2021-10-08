@@ -10,7 +10,7 @@ module.exports = {
     require.resolve('./rules/jsdoc.js'),
   ],
   rules: {
-    'import/extensions': ['error', 'always'],
+    'import/extensions': ['error', 'ignorePackages'],
   },
   parser: 'babel-eslint',
   env: {
