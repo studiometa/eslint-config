@@ -3,6 +3,9 @@ module.exports = {
   settings: {
     jsdoc: {
       mode: 'typescript',
+      tagNamePreference: {
+        fires: 'emits',
+      },
     },
   },
   rules: {
