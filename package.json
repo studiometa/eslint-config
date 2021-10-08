@@ -20,6 +20,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "src/*",
+    "readme.md"
+  ],
   "license": "MIT",
   "dependencies": {
     "babel-eslint": "^10.1.0",
