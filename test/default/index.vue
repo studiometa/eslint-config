@@ -1,5 +1,6 @@
 <template>
   <div
+    v-if="true === true"
     ref="foo"
     class="foo"
     long-props="iAmAVeryVeryLongProp"
@@ -12,11 +13,14 @@
 <script>
   export default {
     name: 'Index',
+    mounted() {
+      console.log(this.$refs.foo);
+    },
   };
 </script>
 
 <style>
-.foo {
-
-}
+  .foo {
+    display: block;
+  }
 </style>
