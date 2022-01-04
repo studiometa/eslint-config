@@ -26,25 +26,25 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@babel/eslint-parser": "^7.15.8",
-    "@rushstack/eslint-patch": "^1.0.8",
+    "@babel/eslint-parser": "^7.16.5",
+    "@rushstack/eslint-patch": "^1.1.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-jsdoc": "^36.1.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsdoc": "^36.1.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^36.0.0",
-    "eslint-plugin-vue": "^7.19.1"
+    "eslint-plugin-vue": "^7.20.0"
   },
   "devDependencies": {
-    "@studiometa/prettier-config": "^2.0.1",
-    "@types/node": "^16.10.3",
+    "@studiometa/prettier-config": "^2.1.1",
+    "@types/node": "^16.11.18",
     "eslint": "^7.32.0",
     "prettier": "^2.4.1"
   },
   "peerDependencies": {
     "eslint": ">=7.32.0",
-    "prettier": ">=2.4.1"
+    "prettier": ">=2.5.1"
   },
   "repository": {
     "type": "git",
