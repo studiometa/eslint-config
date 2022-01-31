@@ -35,7 +35,7 @@ module.exports = {
     // Ensures that (JavaScript) examples within JSDoc adhere to ESLint rules.
     'jsdoc/check-examples': 'off',
     // Reports invalid padding inside JSDoc blocks.
-    'jsdoc/check-indentation': 'warn',
+    'jsdoc/check-indentation': 'off',
     // Reports invalid alignment of JSDoc block lines.
     'jsdoc/check-line-alignment': 'off',
     // Ensures that parameter names in JSDoc match those in the function declaration.
@@ -98,7 +98,8 @@ module.exports = {
     // - A colon or semi-colon followed by two line breaks is still part of the containing paragraph (unlike normal dual line breaks).
     // - Text within inline tags {...} are not checked for sentence divisions.
     // - Periods after items within the abbreviations option array are not treated as sentence endings.
-    'jsdoc/require-description-complete-sentence': 'warn',
+    // @todo enable when https://github.com/gajus/eslint-plugin-jsdoc/issues/779 is fixed
+    'jsdoc/require-description-complete-sentence': 'off',
     // Requires that all functions have examples.
     //
     // - All functions must have one or more @example tags.
