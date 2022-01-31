@@ -13,5 +13,9 @@ module.exports = {
     'no-multi-assign': 'warn',
     'no-unneeded-ternary': 'warn',
     camelcase: ['warn', { properties: 'always' }],
+    'object-curly-newline': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'function-paren-newline': 'off',
+    'operator-linebreak': 'off',
   },
 };
