@@ -1,6 +1,6 @@
 module.exports = {
   files: ['*.vue'],
-  extends: ['plugin:vue/recommended'],
+  extends: ['plugin:vue/vue3-recommended'],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@babel/eslint-parser',
@@ -44,10 +44,8 @@ module.exports = {
     'vue/max-attributes-per-line': [
       'error',
       {
-        singleline: { max: 3 },
-        multiline: {
-          max: 1,
-        },
+        singleline: 3,
+        multiline: 1,
       },
     ],
     /**
