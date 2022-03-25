@@ -83,5 +83,6 @@ module.exports = {
     'vue/eqeqeq': ['warn', 'always'],
     'vue/camelcase': ['warn', { properties: 'always' }],
     'vue/no-irregular-whitespace': 'warn',
+    'vue/multi-word-component-names': 'warn',
   },
 };
