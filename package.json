@@ -1,6 +1,6 @@
 {
   "name": "@studiometa/eslint-config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "ESLint Configuration",
   "main": "src/index.js",
   "scripts": {
@@ -43,7 +43,7 @@
     "prettier": "^2.5.1"
   },
   "peerDependencies": {
-    "eslint": ">=7.32.0|>=8",
+    "eslint": ">=7.32.0 || >=8",
     "prettier": ">=2.5.1"
   },
   "repository": {
