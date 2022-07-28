@@ -4,6 +4,7 @@ module.exports = {
     'import/extensions': ['error', 'ignorePackages'],
     'import/order': 'warn',
     'import/prefer-default-export': 'off',
+    'import/no-duplicates': ['error', { considerQueryString: true }],
   },
   settings: {
     'import/parsers': {
