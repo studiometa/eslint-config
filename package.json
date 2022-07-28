@@ -1,11 +1,14 @@
 {
   "name": "@studiometa/eslint-config",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "ESLint Configuration",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "test:lint-vue": "eslint --no-eslintrc -c ./test/vue/.eslintrc.js ./test/vue/test.vue",
+    "test": "npm run test:default && npm run test:legacy && npm run test:build-files && npm run test:vue",
+    "test:default": "eslint --no-eslintrc -c ./test/default/.eslintrc.js ./test/default/ --ext=.js,.vue",
+    "test:legacy": "eslint --no-eslintrc -c ./test/legacy/.eslintrc.js ./test/legacy/ --ext=.js,.vue",
+    "test:build-files": "eslint --no-eslintrc -c ./test/build-files/.eslintrc.js ./test/build-files/ --ext=.mjs,.js,.vue",
+    "test:vue": "eslint --no-eslintrc -c ./test/vue/.eslintrc.js ./test/vue/test.vue",
     "lint": "eslint src/",
     "fix": "eslint --fix src/",
     "eslint-config": "eslint --print-config test/default/index.js --config src/index.js",
@@ -30,6 +33,7 @@
     "@rushstack/eslint-patch": "^1.1.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^3.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsdoc": "^37.7.1",
     "eslint-plugin-prettier": "^4.0.0",
@@ -43,7 +47,7 @@
     "prettier": "^2.5.1"
   },
   "peerDependencies": {
-    "eslint": ">=7.32.0 || >=8",
+    "eslint": ">=7.32.0 || >=8.0.0",
     "prettier": ">=2.5.1"
   },
   "repository": {
