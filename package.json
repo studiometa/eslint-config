@@ -1,6 +1,6 @@
 {
   "name": "@studiometa/eslint-config",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "ESLint Configuration",
   "main": "src/index.js",
   "scripts": {
@@ -38,7 +38,8 @@
     "eslint-plugin-jsdoc": "^37.7.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^40.1.0",
-    "eslint-plugin-vue": "^8.4.1"
+    "eslint-plugin-vue": "^8.4.1",
+    "resolve.exports": "^1.1.0"
   },
   "devDependencies": {
     "@studiometa/prettier-config": "^2.1.1",

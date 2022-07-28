@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   plugins: ['eslint-plugin-import'],
   rules: {
@@ -12,6 +14,7 @@ module.exports = {
     },
     'import/resolver': {
       typescript: {},
+      [path.resolve('../resolvers/export-field.js')]: {},
     },
   },
 };
