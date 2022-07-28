@@ -1,6 +1,6 @@
 {
   "name": "@studiometa/eslint-config",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "ESLint Configuration",
   "main": "src/index.js",
   "scripts": {
