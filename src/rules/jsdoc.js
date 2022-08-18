@@ -5,6 +5,11 @@ module.exports = {
       mode: 'typescript',
       tagNamePreference: {
         fires: 'emits',
+        augments: {
+          message:
+            '@extends is to be used over @augments as it is more evocative of classes than @augments',
+          replacement: 'extends',
+        },
       },
     },
   },
