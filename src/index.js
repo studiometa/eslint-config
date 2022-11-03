@@ -10,7 +10,6 @@ module.exports = {
     require.resolve('./rules/stylistic-issues.js'),
     require.resolve('./rules/es6.js'),
     require.resolve('./rules/jsdoc.js'),
-    require.resolve('./rules/import.js'),
   ],
   parser: '@babel/eslint-parser',
   parserOptions: {
@@ -26,5 +25,9 @@ module.exports = {
     require('./overrides/prettier.js'),
     require('./overrides/vue.js'),
     require('./overrides/typescript.js'),
+    {
+      files: ['*.js'],
+      extends: [require.resolve('./rules/import.js')],
+    },
   ],
 };
