@@ -25,5 +25,6 @@ module.exports = {
     require('./overrides/jest.js'),
     require('./overrides/prettier.js'),
     require('./overrides/vue.js'),
+    require('./overrides/typescript.js'),
   ],
 };
