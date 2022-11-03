@@ -14,7 +14,7 @@ module.exports = {
     },
     'import/resolver': {
       typescript: {},
-      [path.resolve('../resolvers/export-field.js')]: {},
+      [path.resolve(__dirname, '../resolvers/export-field.js')]: {},
     },
   },
 };
