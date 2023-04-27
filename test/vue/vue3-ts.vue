@@ -1,5 +1,11 @@
-<script setup>
-  const count = ref(0);
+<script setup lang="ts">
+  import type { Ref } from 'vue';
+  import { ref } from 'vue';
+
+  type Count = Ref<number>;
+
+  const count: Count = ref();
+  count.value = 0;
 </script>
 
 <template>

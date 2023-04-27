@@ -1,6 +1,6 @@
 {
   "name": "@studiometa/eslint-config",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "description": "ESLint Configuration",
   "main": "src/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test:default": "eslint --no-eslintrc -c ./test/default/.eslintrc.js ./test/default/ --ext=.js,.vue",
     "test:legacy": "eslint --no-eslintrc -c ./test/legacy/.eslintrc.js ./test/legacy/ --ext=.js,.vue",
     "test:build-files": "eslint --no-eslintrc -c ./test/build-files/.eslintrc.js ./test/build-files/ --ext=.mjs,.js,.vue",
-    "test:vue": "eslint --no-eslintrc -c ./test/vue/.eslintrc.js ./test/vue/test.vue",
+    "test:vue": "eslint --no-eslintrc -c ./test/vue/.eslintrc.js ./test/vue/ --ext=.vue",
     "lint": "eslint src/",
     "fix": "eslint --fix src/",
     "eslint-config": "eslint --print-config test/default/index.js --config src/index.js",
@@ -29,26 +29,27 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@babel/eslint-parser": "^7.17.0",
-    "@rushstack/eslint-patch": "^1.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.36.0",
-    "@typescript-eslint/parser": "^5.36.0",
+    "@babel/eslint-parser": "^7.21.3",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-import-resolver-typescript": "^3.3.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsdoc": "^37.7.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-unicorn": "^40.1.0",
-    "eslint-plugin-vue": "^8.4.1",
-    "resolve.exports": "^1.1.0"
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsdoc": "^43.1.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^46.0.0",
+    "eslint-plugin-vue": "^9.11.0",
+    "resolve.exports": "^2.0.2"
   },
   "devDependencies": {
-    "@studiometa/prettier-config": "^2.1.1",
-    "@types/node": "^17.0.15",
-    "eslint": "^8.8.0",
-    "prettier": "^2.5.1"
+    "@studiometa/prettier-config": "^3.0.0",
+    "@types/node": "^18.16.1",
+    "eslint": "^8.39.0",
+    "prettier": "^2.8.8",
+    "vue": "^3.2.47"
   },
   "peerDependencies": {
     "eslint": ">=7.32.0 || >=8.0.0",
