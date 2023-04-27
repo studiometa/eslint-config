@@ -1,53 +1,25 @@
 module.exports = {
-  files: ['*.vue'],
+  files: ['**/*.vue'],
   extends: ['plugin:vue/vue3-recommended'],
   parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: '@babel/eslint-parser',
+    parser: {
+      js: '@babel/eslint-parser',
+      ts: '@typescript-eslint/parser',
+    },
     ecmaVersion: 2019,
     sourceType: 'module',
     requireConfigFile: false,
   },
   rules: {
-    /**
-     * Disallow orphan closing `>`.
-     * @see https://eslint.vuejs.org/rules/html-closing-bracket-newline.html
-     */
-    'vue/html-closing-bracket-newline': [
-      'error',
-      {
-        singleline: 'never',
-        multiline: 'never',
-      },
-    ],
-    /**
-     * Disable the core indent rule in favor of the `vue/script-indent` one.
-     * @see https://eslint.org/docs/rules/indent
-     */
+    'vue/html-closing-bracket-newline': 'off',
     indent: 'off',
-    /**
-     * Force content of scripts tag to be nested.
-     * @see https://eslint.vuejs.org/rules/script-indent.html
-     */
-    'vue/script-indent': [
-      'error',
-      2,
-      {
-        baseIndent: 1,
-        switchCase: 1,
-      },
-    ],
+    'vue/script-indent': 'off',
     /**
      * Allow a maximum of 3 attributes on a same line.
      * @see https://eslint.vuejs.org/rules/max-attributes-per-line.html
      */
-    'vue/max-attributes-per-line': [
-      'error',
-      {
-        singleline: 3,
-        multiline: 1,
-      },
-    ],
+    'vue/max-attributes-per-line': 'off',
     /**
      * Force kebab-case components' name in templates.
      * @see https://eslint.vuejs.org/rules/component-name-in-template-casing.html
@@ -84,5 +56,7 @@ module.exports = {
     'vue/camelcase': ['warn', { properties: 'always' }],
     'vue/no-irregular-whitespace': 'warn',
     'vue/multi-word-component-names': 'warn',
+    'vue/html-self-closing': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
   },
 };
