@@ -29,6 +29,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.22.1",
     "@babel/eslint-parser": "^7.21.3",
     "@rushstack/eslint-patch": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^5.59.1",
