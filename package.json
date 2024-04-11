@@ -5,17 +5,9 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "test": "npm run test:default && npm run test:legacy && npm run test:build-files && npm run test:vue",
-    "test:default": "eslint --no-eslintrc -c ./test/default/.eslintrc.js ./test/default/ --ext=.js,.vue",
-    "test:legacy": "eslint --no-eslintrc -c ./test/legacy/.eslintrc.js ./test/legacy/ --ext=.js,.vue",
-    "test:build-files": "eslint --no-eslintrc -c ./test/build-files/.eslintrc.js ./test/build-files/ --ext=.mjs,.js,.vue",
-    "test:vue": "eslint --no-eslintrc -c ./test/vue/.eslintrc.js ./test/vue/ --ext=.vue",
+    "test": "eslint test/",
     "lint": "eslint src/",
-    "fix": "eslint --fix src/",
-    "eslint-config": "eslint --print-config test/default/index.js --config src/index.js",
-    "eslint-check": "eslint --print-config test/default/index.js --config src/index.js | eslint-config-prettier-check",
-    "eslint-config-legacy": "eslint --print-config test/legacy/index.js --config src/legacy.js",
-    "eslint-check-legacy": "eslint --print-config test/legacy/index.js --config src/legacy.js | eslint-config-prettier-check"
+    "fix": "eslint --fix src/"
   },
   "author": "Studio Meta <agence@studiometa.fr> (https://www.studiometa.fr)",
   "contributors": [
