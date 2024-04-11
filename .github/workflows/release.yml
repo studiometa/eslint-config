@@ -7,24 +7,19 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          fetch-depth: '0'
-
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 16
+          node-version: 20
           cache: npm
           registry-url: https://registry.npmjs.org/
-
-
       - run: |
           ls -al
           VERSION=${GITHUB_REF/refs\/tags\//}
           TAG='latest'
-          if [[ $VERSION =~ 'alpha' || $VERSION =~ 'beta' ]]; then
+          if [[ $VERSION =~ 'alpha' || $VERSION =~ 'beta' || $VERSION =~ 'rc' ]]; then
             TAG='next'
           fi
           npm publish --tag $TAG
@@ -36,17 +31,9 @@ jobs:
       - name: Prepare the changelog from the tag message
         id: prepare_changelog
         run: |
-          # Parse version
-          VERSION=${GITHUB_REF/refs\/tags\//}
-          echo "Setting release version to $VERSION"
-          echo "release_version=$VERSION" >> $GITHUB_ENV
-
-          echo "$GITHUB_REF"
-          echo "$GITHUB_REF_NAME"
-
           PRERELEASE=false
           # Check release type
-          if [[ $VERSION =~ 'alpha' || $VERSION =~ 'beta' ]]; then
+          if [[ $GITHUB_REF_NAME =~ 'alpha' || $GITHUB_REF_NAME =~ 'beta' || $GITHUB_REF_NAME =~ 'rc' ]]; then
             echo "This is a prerelease."
             PRERELEASE=true
           fi
@@ -60,6 +47,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
-          release_name: v${{ env.release_version }}
+          release_name: v${{ github.ref_name }}
+          body: Please refer to [CHANGELOG.md](https://github.com/studiometa/eslint-config/blob/${{ github.ref_name }}/CHANGELOG.md) for details.
           draft: false
           prerelease: ${{ env.is_prerelease }}
