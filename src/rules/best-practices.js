@@ -1,5 +1,13 @@
-module.exports = {
-  plugins: ['eslint-plugin-unicorn'],
+import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import * as eslintrc from '@eslint/eslintrc';
+
+export default {
+  languageOptions: {
+    ...eslintrc.Legacy.environments.get('es2024'),
+  },
+  plugins: {
+    unicorn: eslintPluginUnicorn,
+  },
   rules: {
     curly: ['error', 'all'],
     'dot-notation': 'warn',

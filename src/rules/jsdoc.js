@@ -1,20 +1,10 @@
-module.exports = {
-  plugins: ['eslint-plugin-jsdoc'],
-  settings: {
-    jsdoc: {
-      mode: 'typescript',
-      tagNamePreference: {
-        fires: 'emits',
-        augments: {
-          message:
-            '@extends is to be used over @augments as it is more evocative of classes than @augments',
-          replacement: 'extends',
-        },
-      },
-    },
-  },
+import jsdoc from 'eslint-plugin-jsdoc';
+
+export default {
+  files: ['**/*.js'],
+  plugins: { jsdoc },
   rules: {
-    'require-jsdoc': [
+    'jsdoc/require-jsdoc': [
       'warn',
       {
         require: {
