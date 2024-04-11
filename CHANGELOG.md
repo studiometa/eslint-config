@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [v4.0.0](https://github.com/studiometa/eslint-config/compare/3.1.3..4.0.0) (2023-04-11)
+
 ### Changed
 
 - ⚠️ Update ESLint v8 → v9 ([#54](https://github.com/studiometa/eslint-config/pull/54))
