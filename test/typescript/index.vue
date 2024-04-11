@@ -1,3 +1,9 @@
+<script setup lang="ts">
+  function foo() {
+
+  }
+</script>
+
 <template>
   <div
     v-if="true === true"
@@ -9,15 +15,6 @@
     <p>Foo</p>
   </div>
 </template>
-
-<script>
-  export default {
-    name: 'Index',
-    mounted() {
-      console.log(this.$refs.foo);
-    },
-  };
-</script>
 
 <style>
   .foo {

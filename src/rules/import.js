@@ -1,20 +1,11 @@
-const path = require('path');
-
-module.exports = {
+// @todo update eslint-plugin-import when it supports ESLint v9
+// @see https://github.com/import-js/eslint-plugin-import/issues/2948
+export default {
   plugins: ['eslint-plugin-import'],
   rules: {
     'import/extensions': ['error', 'ignorePackages'],
     'import/order': 'warn',
     'import/prefer-default-export': 'off',
     'import/no-duplicates': ['error', { considerQueryString: true }],
-  },
-  settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
-    'import/resolver': {
-      typescript: {},
-      [path.resolve(__dirname, '../resolvers/export-field.js')]: {},
-    },
   },
 };
