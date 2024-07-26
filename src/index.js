@@ -12,6 +12,7 @@ export const js = [eslintJs.configs.recommended, bestPractices, es6, jsdoc];
 export const prettier = [eslintConfigPrettier, eslintPluginPrettierRecommended];
 
 export const vue = [...pluginVue.configs['flat/recommended']];
+export const vue2 = [...pluginVue.configs['flat/vue2-recommended']];
 
 // @todo wait for typescript-eslint to support ESLint v9
 // @see https://github.com/typescript-eslint/typescript-eslint/issues/8211
