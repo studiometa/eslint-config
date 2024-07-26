@@ -4,9 +4,11 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+## [v4.1.0](https://github.com/studiometa/eslint-config/compare/4.0.1..4.1.0) (2023-07-26)
+
 ### Added
 
-- Export the Vue 2 recommended configuration ([51ce3cb](https://github.com/studiometa/eslint-config/commit/51ce3cb))
+- Export the Vue 2 recommended configuration ([45ba68e](https://github.com/studiometa/eslint-config/commit/45ba68e))
 
 ## [v4.0.1](https://github.com/studiometa/eslint-config/compare/4.0.0..4.0.1) (2023-04-11)
 
