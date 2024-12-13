@@ -1,4 +1,4 @@
-export default {
+export const possibleErrors = {
   rules: {
     'no-console': 'error',
     'no-debugger': 'error',

@@ -1,7 +1,8 @@
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import * as eslintrc from '@eslint/eslintrc';
+import type { Linter } from 'eslint';
 
-export default {
+export const bestPractices = {
   languageOptions: {
     ...eslintrc.Legacy.environments.get('es2024'),
   },
@@ -69,5 +70,5 @@ export default {
     'unicorn/prefer-string-trim-start-end': 'error',
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/throw-new-error': 'error',
-  },
+  } as Record<string, Linter.RuleEntry>,
 };
