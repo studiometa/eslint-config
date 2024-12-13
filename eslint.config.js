@@ -1,16 +1,10 @@
-import { js, vue, prettier } from './src/index.js';
-import { globals } from './src/utils.js';
+import { defineConfig, js, vueTs, prettier, ts, globals } from './dist/index.js';
 
-export default [
-  ...js,
-  ...vue,
-  ...prettier,
-  {
-    files: ['test/build-files/**/*'],
-    languageOptions: {
-      globals: {
-        ...globals.node,
-      },
+export default defineConfig(js, ts, vueTs, prettier, {
+  files: ['test/build-files/**/*'],
+  languageOptions: {
+    globals: {
+      ...globals.node,
     },
   },
-];
+});

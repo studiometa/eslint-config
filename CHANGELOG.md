@@ -2,7 +2,11 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## Unreleased
+
+### Added
+
+- Add support for TypeScript ([#77](https://github.com/studiometa/eslint-config/pull/77), [8614bf1](https://github.com/studiometa/eslint-config/commit/8614bf1))
 
 ## [v4.1.0](https://github.com/studiometa/eslint-config/compare/4.0.1..4.1.0) (2023-07-26)
 

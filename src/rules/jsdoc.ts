@@ -1,8 +1,9 @@
-import jsdoc from 'eslint-plugin-jsdoc';
+import type { Linter } from 'eslint';
+import jsdocPlugin from 'eslint-plugin-jsdoc';
 
-export default {
+export const jsdoc = {
   files: ['**/*.js'],
-  plugins: { jsdoc },
+  plugins: { jsdoc: jsdocPlugin },
   rules: {
     'jsdoc/require-jsdoc': [
       'warn',
@@ -152,5 +153,5 @@ export default {
     'jsdoc/tag-lines': ['warn', 'never'],
     // Requires all types to be valid JSDoc, Closure, or TypeScript compiler types without syntax errors.
     'jsdoc/valid-types': 'warn',
-  },
+  } as Record<string, Linter.RuleEntry>,
 };

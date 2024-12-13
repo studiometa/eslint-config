@@ -3,6 +3,7 @@
   import { ref } from 'vue';
 
   type Count = Ref<number>;
+  type Countable = Ref<number>;
 
   const count: Count = ref();
   count.value = 0;
