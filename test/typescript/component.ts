@@ -1,5 +1,7 @@
 type Count = any;
 
+var foo = 'dede';
+
 /**
  * Class.
  */
