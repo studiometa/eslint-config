@@ -1,7 +1,9 @@
 <script setup lang="ts">
-  function foo() {
+  import type { Ref } from 'vue';
 
-  }
+  type Count = Ref<number>;
+
+  function foo() {}
 </script>
 
 <template>
