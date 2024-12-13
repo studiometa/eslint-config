@@ -72,7 +72,7 @@ export default defineConfig(ts, prettier, {
 import { defineConfig, ts, vueTs, prettier, globals } from '@studiometa/eslint-config';
 
 export default defineConfig(ts, vueTs, prettier, {
-  files: ['./src/js/**/*.{js,ts}'],
+  files: ['./src/js/**/*.{ts,vue}'],
   languageOptions: {
     globals: {
       ...globals.browser,
