@@ -4,9 +4,15 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Unreleased
 
+## [v4.2.0](https://github.com/studiometa/eslint-config/compare/4.1.0..4.2.0) (2024-12-13)
+
 ### Added
 
 - Add support for TypeScript ([#77](https://github.com/studiometa/eslint-config/pull/77), [8614bf1](https://github.com/studiometa/eslint-config/commit/8614bf1))
+
+### Changed
+
+- Update dependencies ([9702726](https://github.com/studiometa/eslint-config/commit/9702726))
 
 ## [v4.1.0](https://github.com/studiometa/eslint-config/compare/4.0.1..4.1.0) (2023-07-26)
 
