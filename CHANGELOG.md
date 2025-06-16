@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Unreleased
 
+## [v4.3.1](https://github.com/studiometa/eslint-config/compare/4.3.0..4.3.1) (2025-06-16)
+
+### Fixed
+
+- Fix types ([983a113](https://github.com/studiometa/eslint-config/commit/983a113))
+- Fix Node version in GitHub Actions ([6dd34e3](https://github.com/studiometa/eslint-config/commit/6dd34e3))
+
 ## [v4.3.0](https://github.com/studiometa/eslint-config/compare/4.2.0..4.3.0) (2025-06-16)
 
 ### Added
@@ -13,7 +20,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Removed
 
-- Remove an obsolete rule  ([3068439](https://github.com/studiometa/eslint-config/commit/3068439))
+- Remove an obsolete rule ([3068439](https://github.com/studiometa/eslint-config/commit/3068439))
 
 ### Changed
 
