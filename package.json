@@ -50,14 +50,14 @@
     "typescript-eslint": "^8.34.0"
   },
   "devDependencies": {
-    "@studiometa/prettier-config": "^4.1.0",
+    "@studiometa/prettier-config": "4.1.0",
     "@types/eslint__js": "9.14.0",
     "@types/eslint-config-prettier": "6.11.3",
-    "@types/node": "^22.15.1",
+    "@types/node": "22.15.32",
     "esbuild": "0.25.5",
-    "prettier": "^3.5.3",
+    "prettier": "3.5.3",
     "typescript": "5.8.3",
-    "vue": "^3.5.16"
+    "vue": "3.5.16"
   },
   "peerDependencies": {
     "prettier": ">=3.0.0"
