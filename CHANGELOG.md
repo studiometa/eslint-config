@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file. The format 
 
 ## Unreleased
 
+## [v4.3.0](https://github.com/studiometa/eslint-config/compare/4.2.0..4.3.0) (2025-06-16)
+
+### Added
+
+- Add `eslint-formatter-gitlab` as a direct dependency ([0996ca1](https://github.com/studiometa/eslint-config/commit/0996ca1))
+- Add `eslint` as a direct dependency ([0996ca1](https://github.com/studiometa/eslint-config/commit/0996ca1))
+
+### Removed
+
+- Remove an obsolete rule  ([3068439](https://github.com/studiometa/eslint-config/commit/3068439))
+
+### Changed
+
+- Update dependencies ([0996ca1](https://github.com/studiometa/eslint-config/commit/0996ca1))
+
 ## [v4.2.0](https://github.com/studiometa/eslint-config/compare/4.1.0..4.2.0) (2024-12-13)
 
 ### Added
