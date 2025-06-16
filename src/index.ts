@@ -2,7 +2,7 @@ import eslintJs from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginVue from 'eslint-plugin-vue';
-import tseslint from 'typescript-eslint';
+import tseslint, { ConfigWithExtends } from 'typescript-eslint';
 import globals from 'globals';
 import { bestPractices } from './rules/best-practices.js';
 import { es6 } from './rules/es6.js';
@@ -12,7 +12,10 @@ export const defineConfig = tseslint.config;
 
 export const js = defineConfig(eslintJs.configs.recommended, bestPractices, es6, jsdoc);
 
-export const prettier = defineConfig(eslintConfigPrettier, eslintPluginPrettierRecommended);
+export const prettier = defineConfig(
+  eslintConfigPrettier,
+  eslintPluginPrettierRecommended as ConfigWithExtends,
+);
 
 export const ts = defineConfig({
   files: ['**/*.ts'],
@@ -24,7 +27,7 @@ export const ts = defineConfig({
   },
 });
 
-export const vue = defineConfig(pluginVue.configs['flat/recommended']);
+export const vue = defineConfig(pluginVue.configs['flat/recommended'] as ConfigWithExtends);
 export const vueTs = defineConfig({
   files: ['**/*.vue'],
   extends: [ts, vue],
@@ -38,6 +41,6 @@ export const vueTs = defineConfig({
   },
 });
 
-export const vue2 = defineConfig(pluginVue.configs['flat/vue2-recommended']);
+export const vue2 = defineConfig(pluginVue.configs['flat/vue2-recommended'] as ConfigWithExtends);
 
 export { default as globals } from 'globals';
