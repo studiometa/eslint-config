@@ -59,7 +59,6 @@ export const bestPractices = {
     'unicorn/prefer-negative-index': 'error',
     'unicorn/prefer-number-properties': 'error',
     'unicorn/prefer-object-from-entries': 'error',
-    'unicorn/prefer-object-has-own': 'error',
     'unicorn/prefer-optional-catch-binding': 'error',
     'unicorn/prefer-query-selector': 'error',
     'unicorn/prefer-regexp-test': 'error',
