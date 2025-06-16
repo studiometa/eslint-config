@@ -1,10 +1,14 @@
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
-import * as eslintrc from '@eslint/eslintrc';
 import type { Linter } from 'eslint';
+import globals from 'globals';
+import type { ConfigWithExtends } from 'typescript-eslint';
 
 export const bestPractices = {
   languageOptions: {
-    ...eslintrc.Legacy.environments.get('es2024'),
+    globals: { ...globals.es2025 },
+    parserOptions: {
+      ecmaVersion: 2025,
+    },
   },
   plugins: {
     unicorn: eslintPluginUnicorn,
@@ -70,4 +74,4 @@ export const bestPractices = {
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/throw-new-error': 'error',
   } as Record<string, Linter.RuleEntry>,
-};
+} satisfies ConfigWithExtends;
