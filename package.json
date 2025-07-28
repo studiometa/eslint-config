@@ -53,11 +53,11 @@
     "@studiometa/prettier-config": "4.2.0",
     "@types/eslint__js": "9.14.0",
     "@types/eslint-config-prettier": "6.11.3",
-    "@types/node": "22.16.0",
-    "esbuild": "0.25.5",
+    "@types/node": "22.16.5",
+    "esbuild": "0.25.8",
     "prettier": "3.6.2",
     "typescript": "5.8.3",
-    "vue": "3.5.17"
+    "vue": "3.5.18"
   },
   "peerDependencies": {
     "prettier": ">=3.0.0"
